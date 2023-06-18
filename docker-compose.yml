@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  web:
+    image: kaban
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: prod
+      container_name : kaban-management
+      restart: always
+      ports:
+        - "3000:3000"
+      volumes:
+        - .:/usr/src/app
+      env_file:
+        - .env
+      environment:
+        - DATABASE_URL=${DATABASE_URL}
+        - NODE_ENV=${NODE_ENV}
+        - JWT_TOKEN=${JWT_TOKEN}
+        - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      networks:
+        - kaban-network 
+
+networks:
+  kaban-network:
+    name: kaban-network                
