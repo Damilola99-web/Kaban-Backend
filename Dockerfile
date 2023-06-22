@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY tsconfig*.json ./
 
