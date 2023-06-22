@@ -1,4 +1,4 @@
-# Project Management App REST API
+# Kaban Task Management App REST API
 
 This is a Node.js backend project management application that provides RESTful APIs, built using TypeScript and MongoDB. The application is dockerized for easy deployment and scalability.
 
@@ -16,7 +16,7 @@ To run this project locally, you need to have the following installed:
 1. **Clone the repository:**
 
    ```shell
-   git clone https://github.com/your-username/project-management-app.git
+   git clone https://github.com/Damilola99-web/Kaban-Backend.git
    cd project-management-app
    ```
 

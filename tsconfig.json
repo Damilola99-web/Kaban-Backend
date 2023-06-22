@@ -63,7 +63,15 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "paths" : {
-      "@/*": ["src/*"],
+      "@/controllers*": ["src/controllers/*"],
+      "@/database*": ["src/database/*"],
+      "@/documentation*": ["src/documentation/*"],
+      "@/middlewares*": ["src/middlewares/*"],
+      "@/models*": ["src/models/*"],
+      "@/routes*": ["src/routes/*"],
+      "@/services*": ["src/services/*"],
+      "@/types*": ["src/types/*"],
+      "@/utils*": ["src/utils/*"],
     },
     
   }
